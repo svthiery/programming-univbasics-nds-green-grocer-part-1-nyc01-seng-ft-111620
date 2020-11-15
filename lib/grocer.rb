@@ -18,7 +18,6 @@ def consolidate_cart(cart)
     end
     if !find_item_by_name_in_collection(item[:item], new_cart)
       new_cart << item
-      binding.pry
     else 
       
     end
