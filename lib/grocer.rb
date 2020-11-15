@@ -23,6 +23,7 @@ def consolidate_cart(cart)
       new_cart[item_index][:count] += 1 
     end
   end
+  binding.pry
   return new_cart
 end
 
