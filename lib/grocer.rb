@@ -16,8 +16,8 @@ def consolidate_cart(cart)
     if new_cart.length == 0 
       new_cart << item
     end
+    binding.pry
     if find_item_by_name_in_collection(item[:item], new_cart) == false
-      binding.pry
       new_cart << item
     else 
       item_index = new_cart.index("")
