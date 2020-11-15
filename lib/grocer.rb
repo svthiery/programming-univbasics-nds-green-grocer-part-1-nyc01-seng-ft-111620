@@ -21,9 +21,9 @@ def consolidate_cart(cart)
     else 
       item_index = new_cart.index("find_item_by_name_in_collection(item[:item], new_cart)")
       new_cart[item_index][:count] += 1 
+      binding.pry
     end
   end
-  binding.pry
   return new_cart
 end
 
