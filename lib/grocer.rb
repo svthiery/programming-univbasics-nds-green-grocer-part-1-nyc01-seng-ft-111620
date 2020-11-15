@@ -11,7 +11,8 @@ def consolidate_cart(cart)
   cart.map do |item|
     item[:count] = 1    
   end
-  
+  cart.each do ||
+  end
 end
 
 
