@@ -11,8 +11,8 @@ def consolidate_cart(cart)
   cart.map do |item|
     item[:count] = 1    
   end
-  
   cart.each do |item|
+    binding.pry
     if new_cart.length == 0 
       new_cart << item
     elsif find_item_by_name_in_collection(item[:item], new_cart) == false
