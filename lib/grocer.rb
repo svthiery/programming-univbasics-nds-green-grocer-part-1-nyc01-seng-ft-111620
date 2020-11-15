@@ -14,7 +14,7 @@ def consolidate_cart(cart)
   cart.each do |item|
     if new_cart.length == 0 
       new_cart << item
-    elsif find_item_by_name_in_collection(item[:item], new_cart) == false
+    elsif !find_item_by_name_in_collection(item[:item], new_cart) 
       new_cart << item
     else 
       binding.pry
