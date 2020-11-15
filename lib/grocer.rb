@@ -13,9 +13,10 @@ def consolidate_cart(cart)
   end
   
   cart.each do |item|
-    new_cart.length == 0 ? new_cart << item : 
-    binding.pry
-  end
+    if new_cart.length == 0 
+      new_cart << item
+    end
+    
 end
 
 
