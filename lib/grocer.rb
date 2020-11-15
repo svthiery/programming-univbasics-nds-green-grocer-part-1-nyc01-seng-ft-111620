@@ -18,7 +18,6 @@ def consolidate_cart(cart)
     elsif !item_compare
       new_cart << item
     else 
-      binding.pry
       item_index = new_cart.index(item_compare)
       new_cart[item_index][:count] += 1 
     end
