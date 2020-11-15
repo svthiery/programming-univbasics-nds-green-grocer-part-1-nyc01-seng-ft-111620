@@ -16,6 +16,7 @@ def consolidate_cart(cart)
     if new_cart.length == 0 
       new_cart << item
     end
+    
   end
 end
 
